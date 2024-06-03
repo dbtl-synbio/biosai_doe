@@ -54,6 +54,8 @@ for i in np.arange(10000):
         print(d)
         eff = d
         Do = D
+df1 = pd.read_csv('../../data/Biosensors_DoE/design91.csv')
+pd.DataFrame(D,columns=df1.columns).to_csv('../../data/Biosensors_DoE/augdesign91.csv')
     
 
 
